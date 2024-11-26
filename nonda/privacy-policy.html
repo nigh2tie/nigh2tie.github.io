@@ -4,68 +4,175 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>アプリ名 - プライバシーポリシー</title>
+  <title>Nonda？ - プライバシーポリシー</title>
   <style>
+    :root {
+      --bg-primary: #fff8f0;
+      --bg-secondary: #fff4e6;
+      --text-primary: #4a3728;
+      --text-secondary: #6b5344;
+      --accent: #d4815b;
+      --border: #e6d5c5;
+      --link: #c1666b;
+      --link-hover: #a04448;
+    }
+
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      line-height: 1.6;
+      line-height: 1.8;
       max-width: 800px;
       margin: 0 auto;
       padding: 20px;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
     }
 
-    section {
-      margin: 20px 0;
+    .container {
+      background-color: var(--bg-secondary);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    h1 {
+      color: var(--text-primary);
+      text-align: center;
+      padding: 20px 0;
+      margin-bottom: 30px;
+      border-bottom: 2px solid var(--accent);
     }
 
     h2 {
-      border-bottom: 1px solid #eee;
-      padding-bottom: 10px;
+      color: var(--text-primary);
+      margin-top: 2em;
+      padding-bottom: 0.5em;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h3 {
+      color: var(--text-secondary);
+      margin-top: 1.5em;
+    }
+
+    ul,
+    ol {
+      padding-left: 1.5em;
+    }
+
+    li {
+      margin: 0.5em 0;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: var(--link-hover);
+      text-decoration: underline;
+    }
+
+    .last-updated {
+      text-align: right;
+      margin-top: 40px;
+      color: var(--text-secondary);
+      font-style: italic;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 15px;
+      }
+
+      .container {
+        padding: 20px;
+      }
     }
   </style>
 </head>
 
 <body>
-  <h1>プライバシーポリシー</h1>
+  <div class="container">
+    <h1>プライバシーポリシー</h1>
 
-  <section>
-    <h2>1. はじめに</h2>
-    <p>本プライバシーポリシーは、[開発者名]（以下「当社」）が提供する[アプリ名]（以下「本アプリ」）における、ユーザーの個人情報の取扱いについて定めるものです。</p>
-  </section>
+    <section>
+      <h2>はじめに</h2>
+      <p>本プライバシーポリシーは、masashi
+        yokoyama（以下「開発者」といいます）が提供するiOSアプリケーション「Nonda？」（以下「本アプリ」といいます）における、ユーザーの個人情報の取り扱いについて説明するものです。</p>
+    </section>
 
-  <section>
-    <h2>2. 収集する情報</h2>
-    <p>本アプリでは、以下の情報を収集する場合があります：</p>
-    <ul>
-      <li>デバイス情報</li>
-      <li>利用状況データ</li>
-    </ul>
-  </section>
+    <section>
+      <h2>1. 収集する情報</h2>
+      <p>本アプリでは、以下の情報を収集・保存します。</p>
 
-  <section>
-    <h2>3. 情報の利用目的</h2>
-    <p>収集した情報は、以下の目的で利用されます：</p>
-    <ul>
-      <li>アプリの機能提供</li>
-      <li>サービスの改善</li>
-      <li>技術的サポート</li>
-    </ul>
-  </section>
+      <h3>1.1 ユーザーが入力するデータ</h3>
+      <ul>
+        <li>飲酒記録（日付、飲酒有無）</li>
+        <li>アプリ設定（通知設定、テーマ設定）</li>
+      </ul>
 
-  <section>
-    <h2>4. 情報の管理</h2>
-    <p>収集した情報は、適切な安全管理措置を講じて管理いたします。</p>
-  </section>
+      <h3>1.2 自動的に収集される情報</h3>
+      <ul>
+        <li>広告表示に関連する情報（Google AdMobを通じて）</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>5. お問い合わせ</h2>
-    <p>本プライバシーポリシーに関するお問い合わせは、以下の連絡先までお願いいたします：</p>
-    <p>[連絡先情報]</p>
-  </section>
+    <section>
+      <h2>2. 情報の利用目的</h2>
+      <p>収集した情報は以下の目的でのみ使用されます。</p>
+      <ul>
+        <li>本アプリの基本機能の提供</li>
+        <li>ユーザー設定の保存</li>
+        <li>広告の表示</li>
+      </ul>
+    </section>
 
-  <footer>
-    <p>最終更新日: [更新日]</p>
-  </footer>
+    <section>
+      <h2>3. データの保存場所と期間</h2>
+      <ul>
+        <li>すべてのユーザーデータは端末内のローカルストレージにのみ保存されます</li>
+        <li>データは本アプリのアンインストール時に完全に削除されます</li>
+        <li>開発者のサーバーへのデータ送信は一切行いません</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. 広告について</h2>
+      <p>本アプリではGoogle AdMobを使用して広告を表示しています。広告配信に関連する情報の収集と利用については、Googleのプライバシーポリシーが適用されます。詳細は以下のリンクをご確認ください。</p>
+      <p><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google プライバシーポリシー</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>5. データの第三者提供</h2>
+      <p>本アプリで収集したユーザーデータの第三者への提供は一切行いません。ただし、広告配信に関連する情報については、Googleのプライバシーポリシーに基づいて取り扱われます。</p>
+    </section>
+
+    <section>
+      <h2>6. アクセス権限</h2>
+      <p>本アプリは以下のアクセス権限を必要とします。</p>
+      <ul>
+        <li>通知の送信：リマインダー機能のため</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>7. お問い合わせ</h2>
+      <p>本プライバシーポリシーに関するお問い合わせは、以下の連絡先までお願いいたします。</p>
+      <ul>
+        <li>メールアドレス：eni4mido@gmail.com</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>8. プライバシーポリシーの変更</h2>
+      <p>本プライバシーポリシーの内容は、法令変更対応や本アプリの機能変更等の理由により、予告なく変更される場合があります。変更があった場合、本アプリまたは開発者が指定するウェブサイトにて通知いたします。</p>
+    </section>
+
+    <p class="last-updated">最終更新日：2024年11月26日</p>
+  </div>
 </body>
 
 </html>
